@@ -8,14 +8,15 @@ namespace HR
 {
     class Accountant : Employee
     {
-        public Accountant(string firstName, string lastname, int age, int salary)
-            :base(firstName, lastname, age, salary)
+        public double Koeficient { get; set; }
+        public Accountant(string firstName, string lastName, int age, int salary)
+            :base(firstName, lastName, age, salary)
         {
-
+            Koeficient = 0.5;
         }
         public override int Bonus()
         {
-            return (int)(Salary * 0.5);
+            return (int)(Salary * Koeficient);
         }
 
         public override string Position()

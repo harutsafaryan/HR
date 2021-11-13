@@ -76,10 +76,10 @@ namespace HR
             }
         }
 
-        public Employee(string firstName, string lastname, int age, int salary)
+        public Employee(string firstName, string lastName, int age, int salary)
         {
             FirstName = firstName;
-            Lastname = lastname;
+            Lastname = lastName;
             Age = age;
             Salary = salary;
         }
