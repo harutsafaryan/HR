@@ -16,10 +16,21 @@ namespace HR
             employees.Add(accountant);
             employees.Add(worker);
 
+            int totalBonus=0;
             for (int i = 0; i < employees.Count; i++)
             {
-                Console.WriteLine($"({employees[i].Position()}) { employees[i].FullName} bonus is:" +
-                    $" {employees[i].Bonus()}");
+                totalBonus += employees[i].Bonus();
+                Console.WriteLine($"({employees[i].Position()}) \t{employees[i].FullName} \tbonus is:" + $" {employees[i].Bonus()}");
+            }
+
+            manager.Koeficient = 1.1;
+            accountant.Koeficient = 1;
+            worker.Koeficient = 0.9;
+
+            Console.WriteLine();
+            for (int i = 0; i < employees.Count; i++)
+            {
+                Console.WriteLine($"({employees[i].Position()}) \t{employees[i].FullName} \tbonus is:" + $" {employees[i].Bonus()}");
             }
 
             Console.ReadKey();
