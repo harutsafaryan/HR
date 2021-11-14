@@ -8,6 +8,13 @@ namespace HR
 {
     class Worker : Employee
     {
+        public override string FullName
+        {
+            get
+            {
+                return "(Worker)\t" + base.FullName;
+            }
+        }
         public double Koeficient { get; set; }
         public Worker(string firstName, string lastName, int age, int salary) 
             :base(firstName, lastName, age, salary)
@@ -19,10 +26,6 @@ namespace HR
         public override int Bonus()
         {
             return (int)(Salary * Koeficient);
-        }
-        public override string Position()
-        {
-            return "Worker";
         }
     }
 }

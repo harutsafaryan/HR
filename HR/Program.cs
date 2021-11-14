@@ -20,7 +20,7 @@ namespace HR
 
             for (int i = 0; i < employees.Count; i++)
             {
-                Console.WriteLine($"({employees[i].Position()}) \t{employees[i].FullName} \tbonus is:" + $" {employees[i].Bonus()}");
+                Console.WriteLine($"{employees[i].FullName} \tbonus is:" + $" {employees[i].Bonus()}");
             }
 
             manager.Koeficient = 1.1;
@@ -30,7 +30,7 @@ namespace HR
             Console.WriteLine();
             for (int i = 0; i < employees.Count; i++)
             {
-                Console.WriteLine($"({employees[i].Position()}) \t{employees[i].FullName} \tbonus is:" + $" {employees[i].Bonus()}");
+                Console.WriteLine($"{employees[i].FullName} \tbonus is:" + $" {employees[i].Bonus()}");
             }
 
             Console.ReadKey();

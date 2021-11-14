@@ -14,7 +14,7 @@ namespace HR
         private int _age;
         private int _salary;
 
-        public string FullName { get => $"{FirstName}  {Lastname}"; }
+        public virtual string FullName { get => $"{FirstName}  {Lastname}"; }
         public string FirstName
         {
             get => _firstName;
@@ -85,11 +85,6 @@ namespace HR
         }
 
         public virtual int Bonus()
-        {
-            return default;
-        }
-
-        public virtual string Position()
         {
             return default;
         }

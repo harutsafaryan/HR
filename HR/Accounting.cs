@@ -8,15 +8,18 @@ namespace HR
 {
     class Accounting : Accountant
     {
+        public override string FullName
+        {
+            get
+            {
+                return "(Accounting)\t" + base.FullName;
+            }
+        }
+
         public Accounting(string firstName, string lastName, int age, int salary)
             :base(firstName ,lastName, age, salary)
         {
             Koeficient = base.Koeficient * 0.8;
-        }
-
-        public override string Position()
-        {
-            return "Accounting";
         }
     }
 }
