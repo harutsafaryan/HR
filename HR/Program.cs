@@ -18,6 +18,7 @@ namespace HR
             employees.Add(worker);
             employees.Add(accounting);
 
+            int totalBonus=0;
             for (int i = 0; i < employees.Count; i++)
             {
                 Console.WriteLine($"({employees[i].Position()}) \t{employees[i].FullName} \tbonus is:" + $" {employees[i].Bonus()}");
