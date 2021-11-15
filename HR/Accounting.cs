@@ -12,7 +12,8 @@ namespace HR
         {
             get
             {
-                return "(Accounting)\t" + base.FullName;
+                //return "(Accounting)\t" + base.base.FullName;  
+                return "(Accounting)\t" + base.FullName;  
             }
         }
 
